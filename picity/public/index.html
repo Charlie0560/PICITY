@@ -39,6 +39,15 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self' data:gap: http://www.visitsingapore.com 
+https://ssl.gstatic.com 'unsafe-eval';
+style-src 'self' 'unsafe-inline';
+media-src *;
+script-src 'sha256-V+/U3qbjHKP0SaNQhMwYNm62gfWX4QHwPJ7We1PXokI='
+"
+  />
     <title>PICITY</title>
   </head>
   <body>
@@ -69,14 +78,6 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self' data:gap: http://www.visitsingapore.com 
-  https://ssl.gstatic.com 'unsafe-eval';
-  style-src 'self' 'unsafe-inline';
-  media-src *;
-  script-src 'sha256-V+/U3qbjHKP0SaNQhMwYNm62gfWX4QHwPJ7We1PXokI='
-"
-    />
+   
   </body>
 </html>
