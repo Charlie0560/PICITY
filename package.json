@@ -23,6 +23,9 @@
   "name": "api",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "17.0.1"
+  },
   "scripts": {
     "start": "node index.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix picity && npm run build --prefix picity"
