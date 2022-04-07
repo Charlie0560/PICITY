@@ -1,0 +1,27 @@
+.chatuserimg {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.conversationusers {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid goldenrod;
+  border-radius: 10px;
+}
+.chatusername {
+  font-weight: 500;
+}
+.conversationusers:hover {
+  background-color: gray;
+}
+
+@media (max-width: 600px) {
+  .chatuserconversation {
+    width: 100%;
+  }
+}

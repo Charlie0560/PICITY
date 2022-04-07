@@ -1,0 +1,143 @@
+.postimgbox {
+  height: 80vh;
+  background-color: black;
+  display: flex;
+
+  justify-content: center;
+}
+.postbox {
+  width: 100%;
+  margin-top: 2%;
+  border: 1px solid goldenrod;
+  overflow-x: hidden;
+}
+.viewpostpage {
+  display: flex;
+}
+.postcontents {
+  height: 80vh;
+  color: white;
+
+}
+/* .postimgbox{
+  height: max-content;
+} */
+.postimgbox img {
+  max-width: fit-content;
+  width: 100%;
+  height: max-content;
+  /* margin: auto; */
+  max-height: 80vh;
+}
+
+.postimgbox iframe {
+  width: 100%;
+  margin: auto;
+}
+.infosection {
+  display: flex;
+  justify-content: space-between;
+}
+.menuicon {
+  padding: auto;
+}
+.hrline {
+  /* background-color: goldenrod; */
+}
+.postdesc {
+  height: max-content;
+  overflow-y: scroll;
+  padding: 3px;
+  /* goldenrod-space: break-lines; */
+  padding: 10px;
+}
+.postdesc::-webkit-scrollbar {
+  display: block;
+  width: 1px;
+  background-color: goldenrod;
+  color: black;
+}
+.singlepostcomment {
+  padding-inline: 10px;
+  border-radius: 10px;
+}
+
+.comments li {
+  list-style: none;
+}
+
+.commentsbox {
+  /* border: 1px solid black; */
+  overflow-y: scroll;
+  padding: 5px;
+  height: 64vh;
+
+}
+.commentsbox::-webkit-scrollbar {
+  display: none;
+}
+.singlecomment {
+  text-align: right;
+}
+.inputsection {
+  width: 100%;
+}
+.inputsection form {
+  display: flex;
+  flex-direction: row;
+}
+.inputsection form input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid goldenrod;
+  padding-left: 5px;
+}
+
+.inputsection form button {
+  width: 50px;
+  padding: 2px;
+  font-size: 18px;
+  background-color: transparent;
+  color: goldenrod;
+  border: 1px solid goldenrod;
+}
+@media (max-width: 768px) {
+  .postimgbox {
+    height: max-content;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .viewpostpage {
+    height: 100vh;
+    overflow-y: scroll;
+    margin-bottom: 15%;
+  }
+  .commentsbox {
+    height: 30vh;
+    overflow-y: scroll;
+    padding: 5px;
+  }
+  .postimgbox {
+    height: max-content;
+    /* margin-bottom: 15px; */
+  }
+  .inputsection form input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid goldenrod;
+    padding-left: 5px;
+    text-align: left;
+    height: 35px;
+  }
+  .postcontents{
+    height: 50vh;
+    /* background-color: black; */
+  }
+  .postbox{
+    border: none;
+  }
+}
+.inputsection form input::placeholder {
+  text-align: left;
+}

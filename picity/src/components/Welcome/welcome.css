@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+.welcomebox{
+    width: 80%;
+    height: 95vh;
+    /* background-color: black; */
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contentimg{
+    width: 350px;
+}
+.headertitle{
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+}
+.founder{
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .welcomebox{
+        width: 90%;
+    }
+    .contentimg{
+        width: 250px;
+    }
+}

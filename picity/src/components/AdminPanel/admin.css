@@ -1,0 +1,39 @@
+.admincontainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  padding-top: 15px;
+}
+.forms {
+  padding-top: 2%;
+  padding-bottom: 0%;
+  border: 1px solid goldenrod;
+  margin-top: 15px;
+}
+.oppor input,
+.oppor textarea {
+  background-color: transparent;
+  color: white;
+  width: 100%;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.oppor .buttons button,
+.clubs .buttons button {
+  height: 35px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+.oppor button:hover {
+  background-color: black;
+
+  color: white;
+}
+.clubs input,
+.clubs textarea {
+  width: 100%;
+  background-color: transparent;
+}

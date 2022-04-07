@@ -1,0 +1,28 @@
+.internships {
+  padding: 5%;
+  overflow: hidden;
+
+}
+.internship {
+  border-radius: 5px;
+  border: 1px solid goldenrod;
+  padding: 5%;
+  margin-top: 5px;
+  /* background-color: rgb(172, 96, 243); */
+  background-color: transparent;
+}
+
+.internships .moreinfobtn {
+  background-color: black;
+  border: 1px solid goldenrod;
+  padding: 5px;
+  border-radius: 25px;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+.internships small a {
+  color: white;
+  text-decoration: none;
+  /* font-weight: bold; */
+}

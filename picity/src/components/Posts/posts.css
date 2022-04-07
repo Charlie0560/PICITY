@@ -1,0 +1,122 @@
+.post {
+  border: 1px solid gold;
+  height: max-content;
+  border-radius: 10px;
+  object-fit: contain;
+  padding: 2%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* background-color: rgb(172, 96, 243); */
+  background-color: transparent;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+.userimg > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.post .headerpart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hideContent {
+  overflow: hidden;
+  line-height: 1em;
+  height: 2em;
+}
+
+.showContent {
+  line-height: 1em;
+  height: auto;
+}
+.comments a {
+  color: white;
+  text-decoration: none;
+}
+.show-more {
+  cursor: pointer;
+}
+.postimg {
+  width: 100%;
+  background-color: black;
+  height: 100%;
+}
+.postimg iframe {
+  max-width: 100%;
+  max-height: 600px;
+}
+.postedimg {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* display: none; */
+}
+
+.postreactions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.likes {
+  padding-left: 5%;
+  cursor: pointer;
+}
+.share {
+  padding-right: 5%;
+  cursor: pointer;
+}
+.likes > small,
+.comments > small,
+.share > small {
+  padding-left: 5px;
+}
+
+.post_username {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.post_username:hover {
+  color: white;
+}
+.rightcontents {
+  display: flex;
+  column-gap: 5px;
+}
+.rightcontents i {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .post {
+    margin-bottom: -30px;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+  }
+  .postedimg {
+    height: 50%;
+    width: 100%;
+  }
+  .allposts {
+    margin-bottom: 15%;
+  }
+  .showContent {
+    width: 100%;
+  }
+  .tags {
+    font-size: 12px;
+  }
+}

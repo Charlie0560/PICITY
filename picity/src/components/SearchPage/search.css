@@ -1,0 +1,68 @@
+.profilecards {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  height: 92vh;
+  overflow-y: scroll;
+}
+.profilecards::-webkit-scrollbar {
+  display: none;
+}
+.profilecard {
+  margin: 15px;
+  border-radius: 5%;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid goldenrod;
+  height: max-content;
+}
+.card-title {
+  font-weight: 700;
+}
+.usersimg {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  border-radius: 50%;
+  border: 2px solid goldenrod;
+}
+.card-body {
+  text-align: center;
+}
+.profilebtn {
+  background-color: black;
+  color: goldenrod;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+}
+.userslink {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+}
+.userslink a i {
+  font-size: 25px;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .searchpagefilter {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .profilecards {
+    margin-bottom: 10%;
+  }
+}

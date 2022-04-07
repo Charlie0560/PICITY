@@ -1,0 +1,26 @@
+.clubdesc {
+  /* max-height: 350px; */
+  height: max-content;
+  overflow-y: scroll;
+  white-space: break-spaces;
+}
+.clubdesc::-webkit-scrollbar {
+  display: none;
+}
+.deleteclub {
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  float: right;
+}
+.opporbox {
+  /* border: 1px solid goldenrod; */
+  margin-top: 2%;
+  /* padding: 3%; */
+  overflow-x: hidden;
+}
+@media (max-width: 600px) {
+  .opporbox {
+    margin-bottom: 55%;
+  }
+}

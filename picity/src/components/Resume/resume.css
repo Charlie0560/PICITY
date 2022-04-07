@@ -1,0 +1,75 @@
+.resumepage {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+.resumeheader {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.resumes {
+  width: 2480px;
+  height: 100%;
+  background-color: white;
+}
+.leftheader {
+  background-color: white;
+  flex: 0.5;
+  text-align: center;
+  padding-top: 5%;
+}
+.leftheader h2 {
+  font-weight: 550;
+}
+.rightheader {
+  background-color: white;
+  flex: 0.5;
+  text-align: center;
+  padding-top: 5%;
+}
+.resumebody {
+  display: flex;
+  flex-direction: row;
+}
+.leftbody {
+  flex: 0.5;
+  background-color: white;
+  /* height: 50vh; */
+  padding: 5%;
+}
+.rightbody {
+  flex: 0.5;
+  background-color: white;
+  padding-right: 5%;
+}
+
+.resumeexp,
+.resumeeducation,
+.resumeprojects,
+.resumeskilss,
+.resumeawards {
+  margin: auto;
+}
+.resumeexp h6,
+.resumeeducation h6,
+.resumeprojects h6,
+.resumeskilss h6,
+.resumeawards H6 {
+  color: rgb(0, 134, 187);
+  margin-left: 15px;
+  /* text-align: left; */
+  font-weight: 700;
+}
+.exp1 h6 {
+  color: black;
+}
+.exp1 p {
+  color: black;
+  padding-left: 15px;
+}
+@media (max-width: 600px) {
+  .resumes {
+    display: none;
+  }
+}

@@ -1,0 +1,121 @@
+body {
+  background-color: rgb(30, 36, 46);
+}
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid goldenrod;
+  height: 50px;
+  padding-top: 5px;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.topbar_brand {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 3px;
+}
+.title {
+  padding-left: 3px;
+}
+.topbar_brand > .navbar-brand {
+  color: white;
+  font-weight: 500;
+}
+.search {
+  padding-top: 4px;
+}
+.search > i {
+  color: white;
+}
+.search > input {
+  width: 450px;
+  padding-left: 5px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  outline: none;
+  background-color: transparent;
+}
+.search > input::placeholder {
+  color: white;
+}
+.nav-items > ul {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+.nav-items > ul > li {
+  display: flex;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.nav-items ul .chat {
+  margin-right: 0px;
+  padding-left: 3px;
+}
+.nav-items > ul > li > i {
+  font-size: 24px;
+}
+.searchnav {
+  display: none;
+}
+.searchnav > i {
+  display: none;
+}
+
+.logout ul {
+  display: none;
+}
+.logout:hover ul {
+  display: block;
+}
+.searchusers {
+  width: 50%;
+  background-color: transparent;
+  border: 1px solid goldenrod;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.searchusers ul li {
+  list-style: none;
+  text-decoration: none;
+}
+.searchusers ul li a {
+  color: white;
+}
+@media (max-width: 800px) {
+  .search > input {
+    width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .search {
+    display: none;
+  }
+  .add > i,
+  .home > i,
+  .addpost > i,
+  .chat > i,
+  .logout > i {
+    display: none;
+  }
+  .searchnav > i {
+    display: block;
+  }
+  .nav-items > ul > li {
+    margin-right: 0px;
+  }
+  .nav-items .itemcontents .searchnav {
+    margin-right: 5px;
+  }
+  .title {
+    font-size: 20px;
+  }
+}

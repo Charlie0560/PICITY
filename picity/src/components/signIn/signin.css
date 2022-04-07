@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap");
+body {
+  font-family: "Kanit", sans-serif;
+}
+.formcontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 9%;
+  font-family: "Kanit", sans-serif;
+}
+.signinform {
+  width: 40%;
+}
+.formcontainer h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: 50px;
+}
+
+.signinform input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid goldenrod;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  padding-left: 2%;
+  font-weight: 700;
+  padding: 10px;
+}
+input::placeholder {
+  font-weight: 700;
+}
+.submitbtn {
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+}
+
+.submitbtn:hover {
+  background-color: goldenrod;
+  color: black;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+  .signinform {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .signinform {
+    width: 80%;
+  }
+  .formcontainer {
+    margin-top: 33%;
+  }
+  input {
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  input::placeholder {
+    text-align: center;
+  }
+}

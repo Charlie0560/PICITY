@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+.profile {
+  margin-left: 7%;
+  margin-right: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.editbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  float: right;
+  margin-right: 5%;
+}
+
+.leftcolumn {
+  display: flex;
+  flex: 0.3;
+  height: 91vh;
+  margin-right: 5px;
+  padding-top: 2%;
+  margin-top: 5px;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid goldenrod;
+  border-radius: 35px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.leftcolumn::-webkit-scrollbar {
+  display: none;
+}
+.modal {
+  font-family: "Poppins", sans-serif;
+}
+.userinformation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.leftcolumn .userinformation img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  border: 2px solid white;
+}
+.userinformation p {
+  width: 100px;
+}
+.About {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5%;
+}
+.rightcolumn {
+  display: flex;
+  flex: 0.7;
+  height: 91vh;
+  padding: 10px;
+  margin-top: 5px;
+  overflow-y: scroll;
+}
+.rightcolumn::-webkit-scrollbar {
+  display: none;
+}
+.contentsuserinfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.topside {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: max-content;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 5%;
+  /* height: max-content; */
+}
+.achievements {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 5%;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding-right: 3%; */
+}
+.heading i {
+  font-size: 25px;
+}
+.certificateedit,
+.editskills,
+.editachievements {
+  cursor: pointer;
+}
+.certificate {
+  border: 1px solid goldenrod;
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 15px;
+}
+
+.profilelink {
+  margin-left: 5px;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.profilelink label {
+  display: flex;
+  flex-direction: row;
+  /* color: white; */
+}
+.custom-select {
+  background-color: transparent;
+  color: white;
+}
+select option {
+  color: white;
+  background-color: black;
+}
+.profilelink label i,
+.profilelink label a {
+  margin-left: 10px;
+  font-size: 15px;
+  padding-top: 2px;
+}
+.profilelink label a {
+  padding-top: 0px;
+}
+.resumebtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.resume {
+  width: 80%;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid goldenrod;
+  color: white;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.project {
+  border: 1px solid goldenrod;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+.projects h5 i {
+  float: right;
+  padding-right: 3%;
+  font-size: 25px;
+}
+.descriptionOfCerti,
+.projectdesc {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.projecttitle {
+  /* border-bottom: 1px solid goldenrod; */
+  width: max-content;
+}
+.socialicons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  margin-top: 5%;
+}
+.socialicons > div > a {
+  color: white;
+}
+.socialicons > div > a:hover {
+  font-size: 40px;
+  color: goldenrod;
+}
+.certifications .heading button,
+.projects h5 button {
+  margin-right: 0%;
+}
+.userinformation h5 button {
+  margin-right: 0%;
+  float: none;
+}
+.userinformation h5 button i {
+  font-size: 15px;
+}
+.modal-title {
+  color: black;
+}
+
+.modal-body {
+  display: flex;
+  color: black;
+}
+.modal-body > .container > input {
+  border: 1px solid #ced4da;
+  height: calc(2.25rem + 2px);
+  border-radius: 0.25rem;
+}
+.modal-content {
+  width: 100%;
+  border: 1px solid goldenrod;
+}
+.profileimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  width: 200px;
+}
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+}
+.personalinfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  font-weight: 700;
+  padding-left: 5%;
+}
+.personalinfo label {
+  color: white;
+  margin-left: 2%;
+}
+.personalinfo .inputprofile {
+  height: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 90%;
+}
+.personalinfo input {
+  background-color: transparent;
+  color: white;
+}
+.personalinfo textarea {
+  padding: 5px;
+  width: 90%;
+  background-color: transparent;
+  color: white;
+}
+.inputfile {
+  color: white;
+  text-align: center;
+}
+.skillachivemodal {
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
+}
+
+.modelskills,
+.modelachivements {
+  flex: 1;
+  color: white;
+}
+.modelskills input,
+.modelachivements textarea {
+  color: white;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.createcertificate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.createcertificate label {
+  margin-top: 5px;
+  color: white;
+}
+.createcertificate input {
+  padding-left: 5px;
+  color: white;
+  background-color: transparent;
+}
+.createcertificate textarea {
+  background-color: transparent;
+  color: white;
+}
+.certificatedialog {
+  display: flex;
+  /* justify-content: center; */
+  /* width: 100%; */
+}
+.certificatecontent {
+  width: 100%;
+}
+.modal-header {
+  border-bottom: 1px solid goldenrod;
+}
+.modal-footer {
+  border-top: 1px solid goldenrod;
+}
+.modal-header h5 {
+  color: white;
+}
+
+.modal-content {
+  background: linear-gradient(
+    90deg,
+    rgba(44, 44, 187, 1) 0%,
+    rgba(20, 230, 44, 1) 0%,
+    rgba(0, 232, 244, 1) 0%,
+    rgba(39, 152, 182, 1) 0%,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(45, 208, 237, 1) 0%,
+    rgba(178, 252, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(33, 46, 47, 1) 50%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(87, 119, 187, 1) 100%,
+    rgba(6, 0, 125, 1) 100%,
+    rgba(105, 213, 250, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .topside {
+    padding-bottom: 35%;
+    max-height: max-content;
+  }
+  .certificate {
+    padding-left: 8%;
+  }
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .profileimg {
+    margin: auto;
+    padding-bottom: 5%;
+  }
+}
+.defaulttext {
+  font-size: 30px;
+  text-align: center;
+  color: gray;
+}
+@media (max-width: 600px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .leftcolumn {
+    border-radius: 5px;
+    padding-bottom: 5%;
+    height: 100vh;
+  }
+  .topside {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    /* height: 25vh; */
+    overflow-y: scroll;
+    /* height: 25vh; */
+    border-bottom: 1px solid goldenrod;
+    border-top: 1px solid goldenrod;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+  .middleside {
+    margin-top: 0%;
+  }
+  ::placeholder {
+    text-align: left;
+  }
+
+  input {
+    text-align: left;
+  }
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 60%;
+  }
+  ::placeholder {
+    text-align: left;
+  }
+
+  input {
+    text-align: left;
+  }
+}

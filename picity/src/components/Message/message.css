@@ -1,0 +1,71 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.msgbox {
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  display: flex;
+}
+.messageimg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  object-fit: cover;
+}
+.messagetext {
+  border-radius: 2px 45px 45px 35px;
+  border: 1px solid goldenrod;
+  background-color: black;
+  background: linear-gradient(
+    90deg,
+    rgba(44, 44, 187, 1) 0%,
+    rgba(20, 230, 44, 1) 0%,
+    rgba(0, 232, 244, 1) 0%,
+    rgba(39, 152, 182, 1) 0%,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(45, 208, 237, 1) 0%,
+    rgba(178, 252, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(33, 46, 47, 1) 50%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(87, 119, 187, 1) 100%,
+    rgba(6, 0, 125, 1) 100%,
+    rgba(105, 213, 250, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  max-width: 400px;
+  padding: 15px;
+  margin-top: 15px;
+  white-space: break-spaces;
+  word-wrap: break-word;
+}
+.msgbox.own {
+  align-items: flex-end;
+}
+.msgbox.own .message {
+  flex-direction: row-reverse;
+}
+.msgbox.own .message .messagetext {
+  margin-right: 5px;
+}
+.messagetime {
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.msgbox.msgbox.own .message .messagetext {
+  border-radius: 45px 2px 35px 45px;
+  padding: 15px;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .messagetext{
+    max-width: 300px;
+  }
+}

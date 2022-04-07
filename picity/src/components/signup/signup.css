@@ -1,0 +1,51 @@
+.formcontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 9%;
+}
+.signupform {
+  width: 40%;
+}
+
+.signupform input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid goldenrod;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+}
+.submitbtn {
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  color: white;
+}
+@media (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+  .signupform {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .signupform {
+    width: 80%;
+  }
+  .formcontainer {
+    margin-top: 33%;
+  }
+  input {
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  input::placeholder {
+    text-align: center;
+  }
+}
