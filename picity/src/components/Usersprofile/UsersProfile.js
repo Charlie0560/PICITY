@@ -102,7 +102,7 @@ export const UsersProfile = () => {
   }
   const skills = userss.skills;
   const achievements = userss.achievements;
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://picitypeoples.herokuapp.com/images/";
   return (
     <div>
       <div className="profile">

@@ -196,12 +196,12 @@ const Profile = () => {
         <div className="userinformation">
           {user.img ? (
             <img
-              src={`http://localhost:5000/images/${user.img}`}
+              src={`https://picitypeoples.herokuapp.com/images/${user.img}`}
               alt="profile pic"
             />
           ) : (
             <img
-              src={`http://localhost:5000/images/defaultprofileimg.png`}
+              src={`https://picitypeoples.herokuapp.com/images/defaultprofileimg.png`}
               alt="profile pic"
             />
           )}

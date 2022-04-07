@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 
 export const UpdatePost = () => {
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://picitypeoples.herokuapp.com/images/";
   const [post, setPost] = useState("");
   const [embedded, setEmbedded] = useState("");
   const [projectlink, setProjectlink] = useState("");

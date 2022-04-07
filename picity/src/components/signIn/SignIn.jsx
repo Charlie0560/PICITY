@@ -15,6 +15,11 @@ const SignIn = () => {
   const { dispatch } = useContext(AuthContext);
   const [loading, setLoading] = useState(false);
 
+  try {
+    axios.create({ baseURL: "https://picitypeoples.herokuapp.com" });
+  } catch (err) {
+    window.alert(err);
+  }
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -35,7 +40,7 @@ const SignIn = () => {
       dispatch({ type: "LOGIN_FAILURE" });
       console.log(err);
       document.getElementById("errordiv").innerHTML =
-      "Please Enter the correct login credentials";
+        "Please Enter the correct login credentials";
       setLoading(false);
     }
   };

@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useRef } from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import "./signup.css";
 // import { useHistory } from "react-router-dom"
 
@@ -10,23 +10,22 @@ const SignUp = () => {
   const password = useRef();
   // const [loading, setLoading] = useState(false);
   // const [sent, setSent] = useState(false);
-  const [enterotp, setEnterotp] = useState(0);
-  const [tempotp, setTempOtp] = useState(0);
+  // const [enterotp, setEnterotp] = useState(0);
+  // const [tempotp, setTempOtp] = useState(0);
 
-  const handleSend = async () => {
-    // setSent(true);
-    const text = Math.floor(1000 + Math.random() * 9000);
-    try {
-      setTempOtp(text);
-      console.log(text);
-      console.log("Sent successfully");
-      await axios.post("http://localhost:5000/sendmail", {
-        text, mail: email.current.value
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  // const handleSend = async () => {
+  //   const text = Math.floor(1000 + Math.random() * 9000);
+  //   try {
+  //     setTempOtp(text);
+  //     console.log(text);
+  //     console.log("Sent successfully");
+  //     await axios.post("https://picitypeoples.herokuapp.com/sendmail", {
+  //       text, mail: email.current.value
+  //     });
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
   // const history = useHistory();
 
   const signinlocation = () => {
@@ -41,7 +40,7 @@ const SignUp = () => {
       email: email.current.value,
       password: password.current.value,
     };
-    if (tempotp === parseInt(enterotp)) {
+    // if (tempotp === parseInt(enterotp)) {
       const arrpas = password.current.value.split("");
       if (arrpas.length < 6) {
         document.getElementById("errordiv").innerHTML =
@@ -56,9 +55,9 @@ const SignUp = () => {
         document.getElementById("errordiv").innerHTML =
           "Something wents wrong.";
       }
-    } else {
-      window.alert("wrongOTP");
-    }
+    // } else {
+    //   window.alert("wrongOTP");
+    // }
   };
   return (
     <div className="signup">
@@ -95,10 +94,10 @@ const SignUp = () => {
             <br />
             <button
               className="submitbtn"
-              type="button"
-              data-toggle="modal"
-              data-target="#exampleModalCenter"
-              onClick={handleSend}
+              type="submit"
+              // data-toggle="modal"
+              // data-target="#exampleModalCenter"
+              // onClick={handleSend}
             >
               {/* {loading ? "loading..." : "Sign Up"} */}
               Sign Up
@@ -109,7 +108,7 @@ const SignUp = () => {
             <a href="/login" onClick={signinlocation}>
               Sign In
             </a>
-            <div
+            {/* <div
               className="modal fade"
               id="exampleModalCenter"
               tabindex="-1"
@@ -156,20 +155,13 @@ const SignUp = () => {
                     </center>
                   </div>
                   <div className="modal-footer">
-                    {/* <button
-                      type="button"
-                      className="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button> */}
                     <button type="submit" className="submitbtn">
                       Submit
                     </button>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </form>
         </center>
       </div>

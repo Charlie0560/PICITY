@@ -6,7 +6,7 @@ import "./chathead.css"
 export const Chathead = ({ currentchat }) => {
   const { user } = useContext(AuthContext);
   const friendId = currentchat.members.find((m) => m !== user._id);
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://picitypeoples.herokuapp.com/images/";
   const [headuser, setHeadUser] = useState('');
   useEffect(() => {
     const fetchUser = async () => {

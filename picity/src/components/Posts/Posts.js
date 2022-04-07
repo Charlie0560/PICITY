@@ -22,7 +22,7 @@ const Posts = ({ posts }) => {
   const [loading, setLoading] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
   const [postuser, setPostuser] = useState({});
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://picitypeoples.herokuapp.com/images/";
   const { user: currentUser } = useContext(AuthContext);
   const [lines,setLines] = useState(3) 
 

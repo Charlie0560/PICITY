@@ -11,7 +11,7 @@ export const Singlepost = () => {
   const [commentmsg, setCommentmsg] = useState("");
   // const [commentoruser, setCommentoruser] = useState("");
   // const [commentorid, setCommentorid] = useState("");
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://picitypeoples.herokuapp.com/images/";
   const { user: currentUser } = useContext(AuthContext);
 
   useEffect(() => {
