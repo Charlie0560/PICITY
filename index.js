@@ -123,8 +123,12 @@ app.post("/sendmail", cors(), async (req, res) => {
 });
 const PORT = process.env.PORT || 5000
 
-if(process.env.NODE_ENV == 'production'){
-  app.use(express.static('picity/build'));
+if(process.env.NODE_ENV == "production"){
+  app.use(express.static("picity/build"));
+  const path = require("path");
+  app.get("*",(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'picity','build','index.html'))
+  })
 }
 app.listen(PORT, () => {
   console.log("Backend is running!");
