@@ -132,6 +132,7 @@ if(process.env.NODE_ENV == "production"){
     res.sendFile(path.resolve(__dirname,'picity','build','index.html'))
   })
 }
+
 app.listen(PORT, () => {
   console.log("Backend is running!");
 });

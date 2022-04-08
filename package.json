@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix picity && npm run build --prefix picity"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix picity && npm run build --prefix picity"
   },
   "author": "",
   "license": "ISC",
