@@ -5,6 +5,10 @@
   "engines": {
     "node": "17.0.1"
   },
+  "headers": {
+    "accept": "application/json",
+    "Access-Control-Allow-Origin":"*"
+},
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
