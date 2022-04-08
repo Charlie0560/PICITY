@@ -26,6 +26,8 @@ const mg = mailgun({
 });
 
 dotenv.config();
+jQuery.support.cors = true;
+
 
 try {
   mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true }, () => {
