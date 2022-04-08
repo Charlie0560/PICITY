@@ -26,7 +26,7 @@ const mg = mailgun({
 });
 
 dotenv.config();
-jQuery.support.cors = true;
+// jQuery.support.cors = true;
 
 
 try {
