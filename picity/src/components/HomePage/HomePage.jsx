@@ -11,7 +11,7 @@ const HomePage = ({ username }) => {
   const { user } = useContext(AuthContext);
   const [suggesteduser, setSuggestedUser] = useState([]);
   const [loading, setLoading] = useState(false);
-  const PF = "https://picitypeoples.herokuapp.com/images/";
+  const PF = "/api/images/";
   useEffect(() => {
     const fetchPosts = async () => {
       // const res = username

@@ -27,7 +27,7 @@ const Chats = () => {
     setCurrentChat(null);
   };
   useEffect(() => {
-    socket.current = io("ws://localhost:8900");
+    // socket.current = io("ws://localhost:8900");
     socket.current.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,

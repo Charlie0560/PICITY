@@ -196,12 +196,12 @@ const Profile = () => {
         <div className="userinformation">
           {user.img ? (
             <img
-              src={`https://picitypeoples.herokuapp.com/images/${user.img}`}
+              src={`/api/images/${user.img}`}
               alt="profile pic"
             />
           ) : (
             <img
-              src={`https://picitypeoples.herokuapp.com/images/defaultprofileimg.png`}
+              src={`/api/images/defaultprofileimg.png`}
               alt="profile pic"
             />
           )}
@@ -228,13 +228,13 @@ const Profile = () => {
         <div className="profilelink">
           <label htmlFor="profileLink" className="my-2">
             <p>Profile Link</p> <i className="fas fa-link"></i>
-            <a href="/">{"http://localhost:3000"}</a>
+            <a href="/">{"/api"}</a>
           </label>
         </div>
         <div className="portfolioLink profilelink">
           <label htmlFor="portfolioLink" className="my-2">
             <p>Portfolio Link</p> <i className="fas fa-user"></i>
-            <a href="/">{"http://localhost:3000"}</a>
+            <a href="/">{"/api"}</a>
           </label>
         </div>
         <div className="resumebtn">
@@ -409,7 +409,7 @@ const Profile = () => {
                       ) : (
                         <img
                           className="writeImg"
-                          src={`http://localhost:5000/images/${user.img}`}
+                          src={`/api/images/${user.img}`}
                           alt=""
                         />
                       )}

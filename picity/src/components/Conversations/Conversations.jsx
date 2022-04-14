@@ -5,7 +5,7 @@ import "./conversations.css";
 
 export default function Conversations({ conversation, currentuser }) {
   const [user, setUser] = useState(null);
-  const PF = "https://picitypeoples.herokuapp.com/images/";
+  const PF = "/api/images/";
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     const friendId = conversation.members.find((m) => m !== currentuser._id);

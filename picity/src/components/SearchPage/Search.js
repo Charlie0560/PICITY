@@ -4,7 +4,7 @@ import axios from "axios";
 export const Search = () => {
   const [user, setUser] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const PF = "https://picitypeoples.herokuapp.com/images/";
+  const PF = "/api/images/";
   useEffect(() => {
     const fetchUser = async () => {
       const res = await axios.get(`/users/allusers/`);
