@@ -1,6 +1,9 @@
 .clubsimg {
   height: 190px;
 }
+.noticecard {
+  width: 20rem;
+}
 .notices {
   display: flex;
   flex-direction: column;

@@ -13,7 +13,7 @@ const Notice = () => {
   return (
     <div className="notices">
       <center>
-        <div className="card" style={{ width: "20rem" }} onClick={clubsroute}>
+        <div className="card noticecard" onClick={clubsroute}>
           <img className="card-img-top clubsimg" src={clubs} alt="" />
           <div className="card-body">
             <p className="card-text">
@@ -23,8 +23,7 @@ const Notice = () => {
         </div>
         <br />
         <div
-          className="card"
-          style={{ width: "20rem" }}
+          className="card noticecard"
           onClick={opportunitiesroute}
         >
           <img className="card-img-top clubsimg" src={opportunities} alt="" />
