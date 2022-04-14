@@ -19,7 +19,7 @@ export const Experiences = ({ Experiences }) => {
           <h4>{Experiences.title}</h4>
           {currentUser._id === Experiences.userId && (
             <div className="deleteicon">
-              <i class="far fa-trash-alt" onClick={handleDelete}></i>
+              <i className="far fa-trash-alt" onClick={handleDelete}></i>
             </div>
           )}
         </li>

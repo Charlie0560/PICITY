@@ -24,7 +24,7 @@ const LeftSidebar = () => {
   return (
     <div className="leftsidebar">
       <div className="clubs">
-        <h3 style={{ display: "flex", justifyContent: "center" }}>
+        <h3 className="clubupdatehead">
           Clubs Updates
         </h3>
         {loading && (
@@ -68,7 +68,7 @@ const LeftSidebar = () => {
                   />
                 </small>
               </div>
-              <small style={{ float: "right" }} className="moreinfobtn">
+              <small className="moreinfobtn">
                 <a href={`/clubupdate/${c._id}`}>More Info</a>
               </small>
             </div>

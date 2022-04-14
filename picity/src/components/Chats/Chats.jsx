@@ -167,9 +167,8 @@ const Chats = () => {
                   }
                 })
                 .map((usersinfo) => (
-                  <ul className="searchconver" style={{ width: "100%" }}>
+                  <ul className="searchconver" >
                     <li
-                      style={{ cursor: "pointer" }}
                       onClick={() => addconversation(usersinfo._id)}
                     >
                       {usersinfo.username}
@@ -195,7 +194,7 @@ const Chats = () => {
             <div className="chatboxhead">
               <div className="headerofchat">
                 <button className="gotoTop" onClick={scrolltoTop}>
-                  <i class="fa-solid fa-arrow-left-long"></i>
+                  <i className="fa-solid fa-arrow-left-long"></i>
                 </button>
                 <Chathead currentchat={currentChat} />{" "}
               </div>
@@ -246,15 +245,11 @@ const Chats = () => {
             <div className="defaultchatbox">
               <div
                 className="defaultchaticon"
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  marginTop: "15%",
-                }}
+             
               >
-                {/* <i class="fas fa-comment-dots"></i> */}
+                {/* <i className="fas fa-comment-dots"></i> */}
                 <MarkUnreadChatAltIcon
-                  style={{ color: "gray", fontSize: "200px" }}
+                  className="markunread"
                 />
               </div>
               <div className="defaulttext">

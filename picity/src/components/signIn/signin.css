@@ -16,6 +16,17 @@ body {
   font-family: "Kanit", sans-serif;
   font-size: 50px;
 }
+.signuplink{
+  color: aqua;
+}
+.signin1{
+  text-align: center;
+}
+.errordiv{
+  color: red;
+  text-align: center;
+  font-weight: 600;
+}
 
 .signinform input {
   width: 100%;

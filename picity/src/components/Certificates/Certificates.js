@@ -32,7 +32,7 @@ export const Certificates = ({ Certificates }) => {
             <h4>{Certificates.title}</h4>
             {currentUser._id === Certificates.userId && (
               <div className="deleteicon">
-                <i class="far fa-trash-alt" onClick={handleDelete}></i>
+                <i className="far fa-trash-alt" onClick={handleDelete}></i>
               </div>
             )}
           </li>
@@ -42,7 +42,7 @@ export const Certificates = ({ Certificates }) => {
         </ul>
       </div>
       {/* <div
-        class="modal fade"
+        className="modal fade"
         id="updatecertificate"
         tabindex="-1"
         role="dialog"
@@ -52,12 +52,12 @@ export const Certificates = ({ Certificates }) => {
         <div className="modal-dialog modal-dialog-centered certificatedialog" role="document">
           <div className="modal-content certificatecontent">
             <div className="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
+              <h5 className="modal-title" id="exampleModalLabel">
                 Certificate
               </h5>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
@@ -78,12 +78,12 @@ export const Certificates = ({ Certificates }) => {
             <div className="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                className="btn btn-secondary"
                 data-dismiss="modal"
               >
                 Close
               </button>
-              <button type="submit" class="btn btn-primary" >
+              <button type="submit" className="btn btn-primary" >
                 Create
               </button>
             </div>

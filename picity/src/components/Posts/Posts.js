@@ -84,7 +84,7 @@ const Posts = ({ posts }) => {
               width={"100%"}
               height={500}
               animation="wave"
-              style={{marginTop: '2%'}}
+              className="skeletonstyle"
             />
             {/* <br /> */}
           </>
@@ -111,17 +111,16 @@ const Posts = ({ posts }) => {
               <div className="rightcontents">
                 <small>({format(posts.createdAt)})</small>
                 {posts.userId === currentUser._id && (
-                  <i class="far fa-edit certificateedit" onClick={showpost}></i>
+                  <i className="far fa-edit certificateedit" onClick={showpost}></i>
                 )}
                 {posts.userId === currentUser._id && (
-                  <i class="far fa-trash-alt" onClick={handleDelete}></i>
+                  <i className="far fa-trash-alt" onClick={handleDelete}></i>
                 )}
               </div>
             </div>
             <div
               className="showContent hideContent postdescription"
               id="content"
-                style={{ marginBottom: "10px" ,whiteSpace: 'break-spaces'}}
             >
               <TextTruncate
                 line={lines}
@@ -129,7 +128,7 @@ const Posts = ({ posts }) => {
                 truncateText="…"
                 text={posts.desc}
                 textTruncateChild={
-                  <p onClick={()=>setLines(10000)} style={{cursor: 'pointer'}}>
+                  <p onClick={()=>setLines(10000)} className="setlines">
                     <b>Read more</b>
                   </p>
                 }
@@ -141,7 +140,7 @@ const Posts = ({ posts }) => {
                   Project Link: -{" "}
                   <a
                     href={posts.projectlink}
-                    style={{ color: "lightblue", fontWeight: "bold" }}
+                    className="projectlink"
                   >
                     {posts.projectlink}
                   </a>
@@ -183,7 +182,7 @@ const Posts = ({ posts }) => {
             <div className="postreactions my-1">
               <div className="likes" onClick={likeHandler}>
                 <i
-                  class={isLiked ? "fas fa-thumbs-up" : "far fa-thumbs-up"}
+                  className={isLiked ? "fas fa-thumbs-up" : "far fa-thumbs-up"}
                   id="likeicon"
                 ></i>
                 <small className="tags">Likes </small>
@@ -191,7 +190,7 @@ const Posts = ({ posts }) => {
               </div>
               <div className="comments editbtn btn-open-modal">
                 <a href={`/viewpost/${posts._id}`}>
-                  <i class="far fa-comment"></i>
+                  <i className="far fa-comment"></i>
                   <small className="tags">Comments</small>
                 </a>
               </div>
@@ -214,7 +213,7 @@ const Posts = ({ posts }) => {
                   })
                 }}
               >
-                <i class="far fa-share-square"></i>
+                <i className="far fa-share-square"></i>
                 <small
                   className="tags"
                 >

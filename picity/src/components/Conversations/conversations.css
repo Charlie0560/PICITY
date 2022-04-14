@@ -2,6 +2,8 @@
   border-radius: 50%;
   object-fit: cover;
   margin-right: 15px;
+  width: 40px;
+  height: 40px;
 }
 
 .conversationusers {
@@ -12,6 +14,7 @@
   width: 100%;
   border: 1px solid goldenrod;
   border-radius: 10px;
+  justify-content: space-between;
 }
 .chatusername {
   font-weight: 500;
@@ -20,6 +23,12 @@
   background-color: gray;
 }
 
+.deleteconversation{
+  cursor: pointer;
+}
+.deleteconversation i{
+  margin-left: 5%;
+}
 @media (max-width: 600px) {
   .chatuserconversation {
     width: 100%;

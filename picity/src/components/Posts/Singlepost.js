@@ -76,13 +76,13 @@ export const Singlepost = () => {
           </div>}
           <div className={(post.img || post.video || post.embeddedvideo) ? `col-lg-4 col-md-12 postcontents` : `col-md-12 postcontents`} >
             <div className="infosection">
-              <h5 style={{color: 'white', padding: '5px'}}>{postuser.username}</h5>
+              <h5 className="postusername">{postuser.username}</h5>
               {/* <div className="menuicon">
-                <i class="fas fa-ellipsis-v"></i>
+                <i className="fas fa-ellipsis-v"></i>
               </div> */}
             </div>
             <hr className="hrline" />
-            {!(post.img || post.video || post.embeddedvideo) &&<> <div className="postdesc" style={{ whiteSpace: 'break-spaces'}}> {post.desc}</div> <hr className="hrline" /> </>}
+            {!(post.img || post.video || post.embeddedvideo) &&<> <div className="postdesc" > {post.desc}</div> <hr className="hrline" /> </>}
             <div className="commentsbox">
               <div className="singlecomments">
                 {post.comments &&
@@ -121,10 +121,10 @@ export const Singlepost = () => {
                   type="text"
                   onChange={(e) => setCommentmsg(e.target.value)}
                   placeholder="comment..."
-                  style={{ color: "white" }}
+                  className="commentmsg"
                 />
                 <button type="submit">
-                  <i class="far fa-paper-plane"></i>
+                  <i className="far fa-paper-plane"></i>
                 </button>
               </form>
             </div>

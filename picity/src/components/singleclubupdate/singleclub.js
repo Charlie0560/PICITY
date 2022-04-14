@@ -32,7 +32,7 @@ const Singleclub = () => {
   return (
     <div>
       <div className="container clubupdatebox">
-        <h2 className="my-5" style={{ textAlign: "center" }}>
+        <h2 className="my-5 updateclubname">
           {update.clubname}
         </h2>
         {currentUser._id === update.userId && (

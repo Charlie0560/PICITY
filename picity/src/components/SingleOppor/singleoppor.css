@@ -13,6 +13,9 @@
   color: white;
   float: right;
 }
+.updatetitle{
+  text-align: center;
+}
 .opporbox {
   /* border: 1px solid goldenrod; */
   margin-top: 2%;

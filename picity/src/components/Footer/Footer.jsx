@@ -42,19 +42,19 @@ const Footer = () => {
       <div className="nav-items footercontent">
         <ul className="footerUl">
           <li className="chaticon">
-            <i class="fas fa-comments" onClick={chats}></i>
+            <i className="fas fa-comments" onClick={chats}></i>
           </li>
           <li className="infoicon">
-            <i class="fas fa-info-circle" onClick={notices}></i>
+            <i className="fas fa-info-circle" onClick={notices}></i>
           </li>
           <li className="bellicon">
-            <i class="fas fa-home" onClick={home}></i>
+            <i className="fas fa-home" onClick={home}></i>
           </li>
           <li className="addicon">
-            <i class="fas fa-plus-square" onClick={addpost}></i>
+            <i className="fas fa-plus-square" onClick={addpost}></i>
           </li>
           <li className="settingsicon" onClick={logout}>
-            <i class="fas fa-sign-out-alt"></i>
+            <i className="fas fa-sign-out-alt"></i>
           </li>
         </ul>
       </div>

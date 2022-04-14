@@ -49,12 +49,7 @@ const HomePage = ({ username }) => {
           <>
             <center>
               <div
-                className="container"
-                style={{
-                  border: "1px solid goldenrod",
-                  padding: "5%",
-                  marginTop: "2%",
-                }}
+                className="container centercontainer"
               >
                 <h2>Please follow peoples to view the posts</h2>
               </div>
@@ -62,23 +57,22 @@ const HomePage = ({ username }) => {
             {loading && (
               <div className="boxcontainer">
                 <center>
-                  <small style={{ margin: "auto" }}>Loading...</small>
+                  <small>Loading...</small>
                 </center>
               </div>
             )}
             <div
-              class="container-fluid profilecontainers"
-              style={{ width: "100%", overflowX: "scroll" }}
+              className="container-fluid profilecontainers"
             >
               {/* <h2>Bootstrap Horizontal Scrolling with Flexbox</h2> */}
-              <div class="row flex-nowrap">
+              <div className="row flex-nowrap">
                 {suggesteduser.map((usersinfo) => (
-                  <div class="col">
-                    <div class="card card-block" style={{ border: "none" }}>
-                      <div class="card profilecard" style={{ width: "18rem" }}>
+                  <div className="col">
+                    <div className="card card-block blockcard">
+                      <div className="card profilecard">
                         <center>
                           <img
-                            class="card-img-top usersimg"
+                            className="card-img-top usersimg"
                             src={
                               usersinfo.img
                                 ? PF + usersinfo.img
@@ -87,11 +81,11 @@ const HomePage = ({ username }) => {
                             alt=""
                           />
                         </center>
-                        <div class="card-body">
-                          <h4 class="card-title">{usersinfo.username}</h4>
+                        <div className="card-body">
+                          <h4 className="card-title">{usersinfo.username}</h4>
                           <a
                             href={`/profile/${usersinfo.username} `}
-                            class="btn profilebtn"
+                            className="btn profilebtn"
                           >
                             View Profile
                           </a>

@@ -9,6 +9,9 @@
 .postadd {
   margin-top: 5px;
 }
+.setfile{
+  display: none;
+}
 .imgcontainer {
   width: max-content;
   height: 250px;

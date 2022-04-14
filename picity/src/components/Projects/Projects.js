@@ -14,13 +14,13 @@ export const Projects = ({ projects }) => {
     } catch (err) {}
   };
   return (
-    <div class="">
+    <div className="">
       <ul className="projectitem">
         <li className="certificates">
           <h4>{projects.title}</h4>
           {currentUser._id === projects.userId && (
             <div className="deleteicon">
-              <i class="far fa-trash-alt" onClick={handleDelete}></i>
+              <i className="far fa-trash-alt" onClick={handleDelete}></i>
             </div>
           )}
         </li>

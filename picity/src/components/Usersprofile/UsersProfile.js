@@ -123,7 +123,7 @@ export const UsersProfile = () => {
           </div>
           <div className="profilelink">
             <label htmlFor="profileLink" className="my-2">
-              <h6>Profile Link</h6> <i class="fas fa-link"></i>
+              <h6>Profile Link</h6> <i className="fas fa-link"></i>
               <a href={window.location.href} onClick={() => {
                   navigator.clipboard.writeText(
                     `${window.location.href}`
@@ -134,8 +134,8 @@ export const UsersProfile = () => {
           </div>
           <div className="portfolioLink profilelink">
             <label htmlFor="portfolioLink" className="my-2">
-              <h6>Portfolio Link</h6> <i class="fas fa-user"></i>
-              <a href="/">{"http://localhost:3000"}</a>
+              <h6>Portfolio Link</h6> <i className="fas fa-user"></i>
+              <a href="/">{""}</a>
             </label>
           </div>
           <div className="resumebtn">

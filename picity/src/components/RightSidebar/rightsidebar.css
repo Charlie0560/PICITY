@@ -11,8 +11,18 @@
   /* background-color: rgb(172, 96, 243); */
   background-color: transparent;
 }
-
+.outsidediv{
+  height: 100vh;
+}
+.jobshead{
+  display: flex;
+  justify-content: center;
+}
+.lineellipsis{
+  word-wrap: break-word;
+}
 .internships .moreinfobtn {
+  float: right;
   background-color: black;
   border: 1px solid goldenrod;
   padding: 5px;

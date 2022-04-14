@@ -113,6 +113,21 @@
 .searchrecievers ul {
   list-style: none;
 }
+.defaultchaticon{
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+.markunread{
+  color: gray;
+  font-size: 200px;
+}
+.searchconver{
+  width: 100%;
+}
+.searchconver li{
+  cursor: pointer;
+}
 /* .defaultconversation{
   color: gray;
     font-size: 50px;

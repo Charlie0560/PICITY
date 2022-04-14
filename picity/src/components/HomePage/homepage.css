@@ -8,6 +8,24 @@
   overflow: hidden;
 
 }
+.centercontainer{
+  border: 1px solid goldenrod;
+  padding: 5%;
+  margin-top: 2%;
+}
+.boxcontainer > small{
+  margin: auto;
+}
+.profilecontainers{
+  width: 100%;
+  overflow-x: scroll;
+}
+.blockcard{
+  border: none;
+}
+.profilecard{
+  width: 18rem;
+}
 .middlecol {
   height: 92vh;
   overflow-y: scroll;

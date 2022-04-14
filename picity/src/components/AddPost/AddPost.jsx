@@ -55,12 +55,12 @@ const AddPost = () => {
         </div>
         <div className="inputboxes">
           <label htmlFor="fileInput">
-            <i class="far fa-image fileInputIcon"></i>
+            <i className="far fa-image fileInputIcon"></i>
             add a photo
           </label>
 
           <label htmlFor="videoInput" className="utubelink">
-            <i class="fab fa-youtube fileInputIcon"></i>
+            <i className="fab fa-youtube fileInputIcon"></i>
             <input
               type="text"
               placeholder="Enter YouTube Video Link"
@@ -68,7 +68,7 @@ const AddPost = () => {
             />
           </label>
           <label htmlFor="projectLink" className="projectLink">
-            <i class="fas fa-link fileInputIcon"></i>
+            <i className="fas fa-link fileInputIcon"></i>
             <input
               type="text"
               placeholder="Enter Your Project Link"
@@ -79,7 +79,7 @@ const AddPost = () => {
         <input
           type="file"
           id="fileInput"
-          style={{ display: "none" }}
+          className="setfile"
           onChange={(e) => setFile(e.target.files[0])}
         />
 

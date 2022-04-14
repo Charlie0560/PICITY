@@ -47,11 +47,10 @@ const SignIn = () => {
   return (
     <div className="signin">
       <div className="container formcontainer">
-        <h1 style={{ textAlign: "center" }}>Sign In</h1>
+        <h1 className="singin1">Sign In</h1>
         <div
           className="errordiv"
           id="errordiv"
-          style={{ color: "red", textAlign: "center", fontWeight: "600" }}
         ></div>
         <br />
         <center>
@@ -73,7 +72,7 @@ const SignIn = () => {
             <br />
             <br />
             Don't have an account ?{" "}
-            <a href="/register" style={{ color: "aqua" }}>
+            <a href="/register" className="signuplink">
               Sign Up
             </a>
           </form>

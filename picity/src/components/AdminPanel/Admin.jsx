@@ -87,7 +87,7 @@ export const Admin = () => {
               <br />
               <input
                 type="text"
-                style={{ color: "white" }}
+                className="setlink"
                 onChange={(e) => {
                   setClubname(e.target.value);
                 }}
@@ -97,7 +97,7 @@ export const Admin = () => {
               <br />
               <input
                 type="text"
-                style={{ color: "white" }}
+                className="setlink"
                 name="title"
                 id="title"
                 onChange={(e) => {
@@ -109,7 +109,7 @@ export const Admin = () => {
               <br />
               <textarea
                 name="desc"
-                style={{ color: "white" }}
+                className="setlink"
                 id="desc"
                 rows="5"
                 onChange={(e) => {
@@ -121,7 +121,7 @@ export const Admin = () => {
               <br />
               <input
                 type="text"
-                style={{ color: "white" }}
+                className="setlink"
                 onChange={(e) => {
                   setLink(e.target.value);
                 }}

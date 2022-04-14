@@ -62,11 +62,10 @@ const SignUp = () => {
   return (
     <div className="signup">
       <div className="container formcontainer">
-        <h1 style={{ textAlign: "center" }}>Sign Up</h1>
+        <h1 className="signup1">Sign Up</h1>
         <div
           className="errordiv"
           id="errordiv"
-          style={{ color: "red", textAlign: "center", fontWeight: "600" }}
         ></div>
         <br />
         <br />

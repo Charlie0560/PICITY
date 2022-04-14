@@ -24,9 +24,9 @@ const RightSidebar = () => {
     fetchOppor();
   }, []);
   return (
-    <div style={{height: '100vh'}}>
+    <div className="outsidediv">
       <div className="internships">
-        <h3 style={{ display: "flex", justifyContent: "center" }}>Jobs</h3>
+        <h3 className="jobshead">Jobs</h3>
         {loading && (
           <>
             <Skeleton
@@ -64,11 +64,11 @@ const RightSidebar = () => {
                   ellipsis="..."
                   trimRight
                   basedOn="letters"
-                  style={{wordWrap: "break-word"}}
+                  className="lineellipsis"
                 />
               </small>
               <br />
-              <small style={{ float: "right" }} className="moreinfobtn">
+              <small className="moreinfobtn">
                 <a href={`/opportunity/${o._id}`}>View</a>
                 {/* <a href={o.googlelink}>View</a> */}
               </small>

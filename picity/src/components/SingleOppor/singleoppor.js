@@ -32,7 +32,7 @@ const Singleoppor = () => {
   return (
     <div>
       <div className="container clubupdatebox">
-        <h2 className="my-5" style={{ textAlign: "center" }}>
+        <h2 className="my-5 updatetitle">
           {update.title}
         </h2>
         {currentUser._id === update.userId && (

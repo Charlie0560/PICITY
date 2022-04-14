@@ -50,7 +50,6 @@ const Navbar = () => {
         <div
           className="topbar_brand"
           onClick={home}
-          style={{ cursor: "pointer" }}
         >
           <p className="navbar-brand">
             <img
@@ -73,40 +72,40 @@ const Navbar = () => {
               setSearchTerm(e.target.value);
             }}
           />
-          {/* <i class="fas fa-search"></i> */}
+          {/* <i className="fas fa-search"></i> */}
         </div>
 
         <div className="nav-items">
           <ul className="itemcontents">
             <li className="searchnav" onClick={searchpage}>
               {" "}
-              <i class="fas fa-search"></i>
+              <i className="fas fa-search"></i>
             </li>
             {user.isBoss === true && (
               <li className="logout dashboard" onClick={Dashboard}>
-                <i class="fas fa-crown"></i>
+                <i className="fas fa-crown"></i>
               </li>
             )}
             {user.isAdmin === true && (
               <li className="logout dashboard" onClick={admin}>
-                <i class="fas fa-user"></i>
+                <i className="fas fa-user"></i>
               </li>
             )}
             <li className="home">
-              <i class="fas fa-home" onClick={home}></i>
+              <i className="fas fa-home" onClick={home}></i>
             </li>
 
             <li className="addpost">
-              <i class="fas fa-plus-square" onClick={addpost}></i>
+              <i className="fas fa-plus-square" onClick={addpost}></i>
             </li>
             <li className="chat">
-              <i class="fas fa-comment-dots" onClick={chats}></i>
+              <i className="fas fa-comment-dots" onClick={chats}></i>
             </li>
             <li className="profile">
-              <i class="fas fa-user-graduate" onClick={profile}></i>
+              <i className="fas fa-user-graduate" onClick={profile}></i>
             </li>
             <li className="logout" onClick={logout}>
-              <i class="fas fa-sign-out-alt"></i>{" "}
+              <i className="fas fa-sign-out-alt"></i>{" "}
             </li>
           </ul>
         </div>

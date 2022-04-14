@@ -213,8 +213,7 @@ const Profile = () => {
               data-target="#modal-fullscreen-xl"
             >
               <i
-                class="far fa-edit editskills"
-                style={{ float: "right", paddingRight: "5%" }}
+                className="far fa-edit editskills"
               ></i>
             </button>
           </h5>
@@ -228,13 +227,13 @@ const Profile = () => {
         </div>
         <div className="profilelink">
           <label htmlFor="profileLink" className="my-2">
-            <p>Profile Link</p> <i class="fas fa-link"></i>
+            <p>Profile Link</p> <i className="fas fa-link"></i>
             <a href="/">{"http://localhost:3000"}</a>
           </label>
         </div>
         <div className="portfolioLink profilelink">
           <label htmlFor="portfolioLink" className="my-2">
-            <p>Portfolio Link</p> <i class="fas fa-user"></i>
+            <p>Portfolio Link</p> <i className="fas fa-user"></i>
             <a href="/">{"http://localhost:3000"}</a>
           </label>
         </div>
@@ -272,8 +271,7 @@ const Profile = () => {
                   data-target="#skillachieve"
                 >
                   <i
-                    class="far fa-edit editskills"
-                    style={{ float: "right", paddingRight: "5%" }}
+                    className="far fa-edit editskills"
                   ></i>
                 </button>
               </h5>
@@ -294,8 +292,7 @@ const Profile = () => {
                   data-target="#skillachieve"
                 >
                   <i
-                    class="far fa-edit editskills"
-                    style={{ float: "right", paddingRight: "5%" }}
+                    className="far fa-edit editskills"
                   ></i>
                 </button>
               </h5>
@@ -318,8 +315,7 @@ const Profile = () => {
                   data-target="#certificates"
                 >
                   <i
-                    class="fas fa-plus"
-                    style={{ float: "right", paddingRight: "5%" }}
+                    className="fas fa-plus editplus"
                   ></i>
                 </button>
               </div>
@@ -336,8 +332,7 @@ const Profile = () => {
                   data-target="#experience"
                 >
                   <i
-                    class="fas fa-plus"
-                    style={{ float: "right", paddingRight: "5%" }}
+                    className="fas fa-plus editplus"
                   ></i>
                 </button>
               </div>
@@ -357,8 +352,7 @@ const Profile = () => {
                   data-target="#projects"
                 >
                   <i
-                    class="fas fa-plus"
-                    style={{ float: "right", paddingRight: "5%" }}
+                    className="fas fa-plus editplus"
                   ></i>
                 </button>
               </h5>
@@ -377,7 +371,7 @@ const Profile = () => {
         </div>
       </div>
       <div
-        class="modal modal-fullscreen-xl"
+        className="modal modal-fullscreen-xl"
         id="modal-fullscreen-xl"
         tabindex="-1"
         role="dialog"
@@ -386,10 +380,10 @@ const Profile = () => {
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 class="modal-title">Profile</h5>
+              <h5 className="modal-title">Profile</h5>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
@@ -402,11 +396,7 @@ const Profile = () => {
                   <center>
                     <div
                       className="img"
-                      style={{
-                        overflow: "hidden",
-                        display: "flex",
-                        justifyContent: "center",
-                      }}
+                     
                     >
                       {file ? (
                         <>
@@ -414,7 +404,6 @@ const Profile = () => {
                             className="writeImg"
                             src={URL.createObjectURL(file)}
                             alt=""
-                            style={{ width: "100%" }}
                           />
                         </>
                       ) : (
@@ -422,19 +411,17 @@ const Profile = () => {
                           className="writeImg"
                           src={`http://localhost:5000/images/${user.img}`}
                           alt=""
-                          style={{ width: "100%" }}
                         />
                       )}
                     </div>
                     <br />
-                    <label htmlFor="fileInput" style={{ color: "white" }}>
-                      <i class="far fa-image fileInputIcon"></i>
+                    <label htmlFor="fileInput" className="fileinputlabel" >
+                      <i className="far fa-image fileInputIcon"></i>
                       add a photo
                     </label>
                     <input
                       type="file"
                       id="fileInput"
-                      style={{ display: "none" }}
                       onChange={(e) => setFile(e.target.files[0])}
                       className="my-2 inputfile"
                     />
@@ -509,12 +496,12 @@ const Profile = () => {
               <div className="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  className="btn btn-secondary"
                   data-dismiss="modal"
                 >
                   Close
                 </button>
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" className="btn btn-primary">
                   Save changes
                 </button>
               </div>
@@ -523,7 +510,7 @@ const Profile = () => {
         </div>
       </div>
       <div
-        class="modal fade"
+        className="modal fade"
         id="skillachieve"
         tabindex="-1"
         role="dialog"
@@ -533,12 +520,12 @@ const Profile = () => {
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
+              <h5 className="modal-title" id="exampleModalLabel">
                 Skills and Achievements
               </h5>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
@@ -576,12 +563,12 @@ const Profile = () => {
               <div className="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  className="btn btn-secondary"
                   data-dismiss="modal"
                 >
                   Close
                 </button>
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" className="btn btn-primary">
                   Save changes
                 </button>
               </div>
@@ -590,7 +577,7 @@ const Profile = () => {
         </div>
       </div>
       <div
-        class="modal fade"
+        className="modal fade"
         id="certificates"
         tabindex="-1"
         role="dialog"
@@ -603,12 +590,12 @@ const Profile = () => {
         >
           <div className="modal-content certificatecontent">
             <div className="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
+              <h5 className="modal-title" id="exampleModalLabel">
                 Certificate
               </h5>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
@@ -645,12 +632,12 @@ const Profile = () => {
               <div className="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  className="btn btn-secondary"
                   data-dismiss="modal"
                 >
                   Close
                 </button>
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" className="btn btn-primary">
                   Create
                 </button>
               </div>
@@ -659,7 +646,7 @@ const Profile = () => {
         </div>
       </div>
       <div
-        class="modal fade"
+        className="modal fade"
         id="experience"
         tabindex="-1"
         role="dialog"
@@ -677,7 +664,7 @@ const Profile = () => {
               </h5>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
@@ -700,7 +687,7 @@ const Profile = () => {
                   {/* <input type="text" required placeholder="(Month-Year)" onChange={(e)=>setDate(e.target.value)} /> */}
                   <div className="input-group mb-3">
                     <select
-                      class="custom-select"
+                      className="custom-select"
                       id="inputGroupSelect01"
                       onChange={(e) => setType(e.target.value)}
                     >
@@ -730,12 +717,12 @@ const Profile = () => {
               <div className="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  className="btn btn-secondary"
                   data-dismiss="modal"
                 >
                   Close
                 </button>
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" className="btn btn-primary">
                   Create
                 </button>
               </div>
@@ -744,7 +731,7 @@ const Profile = () => {
         </div>
       </div>
       <div
-        class="modal fade"
+        className="modal fade"
         id="projects"
         tabindex="-1"
         role="dialog"
@@ -762,7 +749,7 @@ const Profile = () => {
               </h5>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
@@ -792,8 +779,8 @@ const Profile = () => {
                     name="desc"
                     id="desc"
                     cols="30"
+                    className="textarea"
                     rows="5"
-                    style={{ padding: "5px" }}
                     onChange={(e) => setProjectDesc(e.target.value)}
                   ></textarea>
                   <label htmlFor="duration">Project URL</label>
@@ -807,12 +794,12 @@ const Profile = () => {
               <div className="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  className="btn btn-secondary"
                   data-dismiss="modal"
                 >
                   Close
                 </button>
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" className="btn btn-primary">
                   Create
                 </button>
               </div>

@@ -40,19 +40,18 @@ export default function Conversations({ conversation, currentuser }) {
           <br />
         </>
       ) : (
-        <div className="conversationusers" style={{display: 'flex' , justifyContent: 'space-between'}}>
+        <div className="conversationusers">
         <div className="chatuserconversation">
           <img
             className="chatuserimg"
             src={user?.img ? PF + user?.img : PF + "defaultprofileimg.png"}
-            style={{ width: "40px", height: "40px" }}
-            alt=""
+            alt="userimg"
           />
           <span className="chatusername">{user?.username}</span>
-          {/* <i class="far fa-trash-alt deleteconversation" onClick={handleDelete} style={{marginLeft: '5%'}}></i> */}
+          {/* <i className="far fa-trash-alt deleteconversation" onClick={handleDelete}></i> */}
         </div>
-        <div className="deleteconversation" style={{cursor: 'pointer'}}>
-        <i class="far fa-trash-alt deleteconversation" onClick={handleDelete} style={{marginLeft: '5%'}}></i>
+        <div className="deleteconversation" >
+        <i className="far fa-trash-alt deleteconversation" onClick={handleDelete}></i>
         </div>
         </div>
       )}

@@ -41,10 +41,10 @@ export const Search = () => {
             }
           })
           .map((usersinfo) => (
-            <div class="card profilecard" style={{ width: "18rem" }}>
+            <div className="card profilecard">
               <center>
                 <img
-                  class="card-img-top usersimg"
+                  className="card-img-top usersimg"
                   src={
                     usersinfo.img
                       ? PF + usersinfo.img
@@ -53,11 +53,11 @@ export const Search = () => {
                   alt=""
                 />
               </center>
-              <div class="card-body">
-                <h4 class="card-title">{usersinfo.username}</h4>
+              <div className="card-body">
+                <h4 className="card-title">{usersinfo.username}</h4>
                 <a
                   href={`/profile/${usersinfo.username} `}
-                  class="btn profilebtn"
+                  className="btn profilebtn"
                 >
                   View Profile
                 </a>

@@ -10,6 +10,9 @@
   border: 1px solid goldenrod;
   margin-top: 15px;
 }
+.setlink{
+  color: white;
+}
 .oppor input,
 .oppor textarea {
   background-color: transparent;

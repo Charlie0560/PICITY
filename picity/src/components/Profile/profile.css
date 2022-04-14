@@ -110,6 +110,11 @@
 .editachievements {
   cursor: pointer;
 }
+.editskills,
+.editplus{
+  float: right;
+  padding-right: 5%;
+}
 .certificate {
   border: 1px solid goldenrod;
   padding-left: 3%;
@@ -234,6 +239,21 @@ select option {
   height: 200px;
   border-radius: 50%;
   background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.writeImg{
+  width: 100%;
+}
+.textarea{
+  padding: 5px;
+}
+.inputfile{
+  display: none;
+}
+.fileinputlabel{
+  color: white;
 }
 .personalinfo {
   display: flex;

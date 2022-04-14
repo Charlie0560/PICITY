@@ -59,7 +59,7 @@ export const UpdatePost = () => {
           <label htmlFor="videoInput" className="utubelink">
             {!post.img && (
               <>
-                <i class="fab fa-youtube fileInputIcon"></i>
+                <i className="fab fa-youtube fileInputIcon"></i>
                 <input
                   type="text"
                   placeholder="Enter YouTube Video Link"
@@ -70,7 +70,7 @@ export const UpdatePost = () => {
             )}
           </label>
           <label htmlFor="projectLink" className="projectLink">
-            <i class="fas fa-link fileInputIcon"></i>
+            <i className="fas fa-link fileInputIcon"></i>
             <input
               type="text"
               placeholder="Enter Your Project Link"

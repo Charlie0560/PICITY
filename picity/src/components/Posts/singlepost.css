@@ -17,7 +17,14 @@
 .postcontents {
   height: 80vh;
   color: white;
+}
 
+.commentmsg{
+  color: white;
+}
+.postusername{
+  color: white;
+  padding: 5px;
 }
 /* .postimgbox{
   height: max-content;
@@ -49,6 +56,7 @@
   overflow-y: scroll;
   padding: 3px;
   /* goldenrod-space: break-lines; */
+  white-space: break-spaces;
   padding: 10px;
 }
 .postdesc::-webkit-scrollbar {

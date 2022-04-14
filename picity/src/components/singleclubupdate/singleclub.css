@@ -7,6 +7,9 @@
 .clubdesc::-webkit-scrollbar {
   display: none;
 }
+.updateclubname{
+  text-align: center;
+}
 .deleteclub {
   padding: 5px;
   background-color: transparent;

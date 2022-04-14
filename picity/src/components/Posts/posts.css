@@ -10,7 +10,20 @@
   background-color: transparent;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
-
+.skeletonstyle{
+  margin-top: 2%;
+}
+.postdescription{
+  margin-bottom: 10px;
+  white-space: break-spaces;
+}
+.setlines{
+  cursor: pointer;
+}
+.projectlink{
+  color: lightblue;
+  font-weight: bold;
+}
 .userinfo {
   display: flex;
   flex-direction: row;
